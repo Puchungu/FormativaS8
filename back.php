@@ -1,13 +1,11 @@
 <?php
 $num = $_GET['num'];
 
-function factorial($num) {
-    if ($num == 0) {
-        return 1;
-    } else {
-        return $num * factorial($num - 1);
-    }
+if ($num > 0){
+    echo "El numero ". $num . " es positivo";
+} else if ($num < 0){
+    echo "El numero ". $num . " es negativo";
+} else {
+    echo "El numero ". $num . " es cero, se considera numero neutro";
 }
-
-echo 'El factorial de ' . $num . ' es: ' . factorial($num);
 ?>
