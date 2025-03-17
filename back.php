@@ -1,5 +1,3 @@
-<?php
-
-$name = $_POST['name'];
-echo $name;
+<?php 
+echo "Hello World. from a AJAX request";
 ?>
